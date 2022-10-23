@@ -1,0 +1,196 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+
+  .sidebar {
+    background: #2C2F4C;
+    backdrop-filter: blur(2px);
+    width: 20.55%;
+    padding: 23px 19px;
+    min-height: 100vh;
+    height: 100%;
+
+
+    .options {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .user-op, .menu-op {
+        background-color: #FFFFFF;
+        height: 53px;
+        width: 53px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 8px;
+      }
+
+      .user-op {
+        img {
+          width: 36px;
+        }
+      }
+
+      .menu-op {
+        img {
+          width: 25px;
+        }
+      }
+    }
+
+    .navs {
+      margin-top: 42px;
+
+      .nav-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        .nav-item {
+          border-radius: 8px;
+          overflow: hidden;
+
+          .nav-link {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: #FFFFFF;
+            font-family: 'Vazir FD';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 12px 10px;
+
+            &:before {
+              content: url(/assets/icons/fi_arrow-right.svg);
+              margin-left: 12px;
+              margin-top: 6px;
+            }
+          }
+
+          &.active {
+            background: #6370E5;
+
+            .nav-link {
+
+              &:before {
+                content: url(/assets/icons/fa_ver_line.svg);
+                margin-left: 12px;
+                margin-top: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+
+  .content {
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 20.55%);
+
+    .dash-box {
+      background-color: #3E436C;
+      width: 100%;
+      height: 224px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+
+      .context {
+        width: 100%;
+        padding: 0 40px;
+
+        .dash-page {
+          h1 {
+            margin: 0;
+            padding: 0;
+            color: #FFFFFF;
+          }
+        }
+
+        .breadcrumb-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-top: 15px;
+
+          .breadcrumb-icon {
+            content: url(/assets/icons/Bread-crumb.svg);
+          }
+
+          .breadcrumb {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            .breadcrumb-item {
+              display: flex;
+              align-items: center;
+
+              .breadcrumb-link {
+                color: #FFFFFF;
+              }
+
+              &:before {
+                content: url(/assets/icons/arrow-left-s-line.svg);
+                margin: 12px 8px 0 8px;
+              }
+            }
+          }
+        }
+      }
+
+
+      .overlay {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(/assets/images/hinterrhein.png);
+        opacity: .5;
+      }
+    }
+
+    .dash-card-wrapper {
+      padding: 0 38px;
+      position: relative;
+      top: -80px;
+      .dash-card {
+        background: #FFFFFF;
+        box-shadow: 0 4px 20px rgba(123, 147, 175, 0.2);
+        border-radius: 10px;
+        padding: 40px ;
+
+        .card-title {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 29px;
+          text-align: right;
+          color: #666EB2;
+        }
+
+        .profile {
+          ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+
+}

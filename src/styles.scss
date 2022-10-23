@@ -1,0 +1,31 @@
+@font-face {font-family: "YekanBakh-Regular";
+  src: url("assets/fonts/YekanBakh/YekanBakh-regular.eot"); /* IE9*/
+  src: url("assets/fonts/YekanBakh/YekanBakh-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("assets/fonts/YekanBakh/YekanBakh-regular.woff2") format("woff2"), /* chrome、firefox */
+  url("assets/fonts/YekanBakh/YekanBakh-regular.woff") format("woff"), /* chrome、firefox */
+  url("assets/fonts/YekanBakh/YekanBakh-regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("assets/fonts/YekanBakh/YekanBakh-regular.svg#YekanBakh-Regular") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "YekanBakh-Bold";
+  src: url("assets/fonts/YekanBakh/YekanBakh-bold.eot"); /* IE9*/
+  src: url("assets/fonts/YekanBakh/YekanBakh-bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("assets/fonts/YekanBakh/YekanBakh-bold.woff2") format("woff2"), /* chrome、firefox */
+  url("assets/fonts/YekanBakh/YekanBakh-bold.woff") format("woff"), /* chrome、firefox */
+  url("assets/fonts/YekanBakh/YekanBakh-bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("assets/fonts/YekanBakh/YekanBakh-bold.svg#YekanBakh-Bold") format("svg"); /* iOS 4.1- */
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  text-align: right;
+
+
+  font-family:"YekanBakh-Regular" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
